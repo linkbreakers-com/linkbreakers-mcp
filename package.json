@@ -1,6 +1,6 @@
 {
   "name": "linkbreakers-mcp",
-  "version": "1.162.0",
+  "version": "1.162.2",
   "mcpName": "com.linkbreakers/mcp",
   "description": "Local stdio bridge to the Linkbreakers MCP server (https://mcp.linkbreakers.com) for MCP clients that only run local servers.",
   "keywords": [
