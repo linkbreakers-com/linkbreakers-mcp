@@ -1,0 +1,37 @@
+{
+  "name": "linkbreakers-mcp",
+  "version": "1.159.0",
+  "mcpName": "com.linkbreakers/mcp",
+  "description": "Local stdio bridge to the Linkbreakers MCP server (https://mcp.linkbreakers.com) for MCP clients that only run local servers.",
+  "keywords": [
+    "linkbreakers",
+    "mcp",
+    "model-context-protocol",
+    "qr-code",
+    "lead-capture"
+  ],
+  "homepage": "https://linkbreakers.com/mcp",
+  "bugs": "https://github.com/linkbreakers-com/linkbreakers-mcp/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkbreakers-com/linkbreakers-mcp.git"
+  },
+  "license": "MIT",
+  "author": "Linkbreakers <support@linkbreakers.com>",
+  "type": "module",
+  "bin": {
+    "linkbreakers-mcp": "bin/linkbreakers-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1"
+  }
+}
