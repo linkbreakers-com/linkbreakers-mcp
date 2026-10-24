@@ -21,24 +21,13 @@ Tools, resources and their schemas come from the hosted server: this package for
 
 ### Authentication
 
-- **OAuth (default):** on the first request, your browser opens the Linkbreakers sign-in. Once you approve, the tools appear. Tokens are stored in `~/.config/linkbreakers/mcp-oauth.json` and refreshed automatically.
-- **API token:** set `LINKBREAKERS_API_TOKEN` to a workspace API token from the [dashboard](https://app.linkbreakers.com) to skip the browser.
+On the first request, your browser opens the Linkbreakers sign-in. Once you approve, the tools appear. Tokens are stored in `~/.config/linkbreakers/mcp-oauth.json` and refreshed automatically.
 
-```json
-{
-  "mcpServers": {
-    "linkbreakers": {
-      "command": "npx",
-      "args": ["-y", "linkbreakers-mcp"],
-      "env": { "LINKBREAKERS_API_TOKEN": "your-workspace-token" }
-    }
-  }
-}
-```
+The MCP server accepts OAuth only: dashboard API tokens are refused, so there
+is nothing to paste. API tokens are for the REST API, the SDKs and the CLI.
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `LINKBREAKERS_API_TOKEN` | unset | Workspace API token, sent as a bearer token |
 | `LINKBREAKERS_MCP_URL` | `https://mcp.linkbreakers.com` | Server to forward to |
 | `LINKBREAKERS_MCP_CALLBACK_PORT` | `47823` | Local port for the OAuth redirect |
 
