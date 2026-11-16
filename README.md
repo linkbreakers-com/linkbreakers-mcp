@@ -14,12 +14,12 @@ What an agent can ask for, and the tools it uses:
 | --- | --- |
 | "Make a QR code for our spring poster that opens example.com/spring" | `links_create` |
 | "Make one code per store from this list" | `links_create_bulk` |
-| "Make the code navy with rounded dots" | `qrcodedesigns_update` |
+| "Make the code navy with rounded dots" | `qrcode_designs_update` |
 | "Ask for an email before the redirect" | `workflow_steps_create` |
 | "Who scanned the poster this week, and from where?" | `events_list`, `visitors_list` |
-| "How many scans did the workspace get?" | `metrics_workspace` |
+| "How many scans did the workspace get?" | `analytics_workspace_metric` |
 
-In clients that render MCP Apps (Claude, ChatGPT), `links_create`, `links_get`, `visitors_list` and `metrics_workspace` answer with an interactive card.
+In clients that render MCP Apps (Claude, ChatGPT), `links_create`, `links_get`, `visitors_list` and `analytics_workspace_metric` answer with an interactive card.
 
 ## How it works
 
